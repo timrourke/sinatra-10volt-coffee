@@ -58,6 +58,18 @@
 	            <td>672.93</td>
 	        </tr>
 	    </tbody>
-	</table>
+		</table>
+		<div class="clients">
+			<h2>Our Clients</h2>
+			<p>We partner with the best companies around the world to deliver growth and results. Here are some of the organizations we've worked with.</p>
+			<div class="col-group clearfix">
+				<% (1..9).each do %>
+					<div class="col-1-3">
+						<img src="<%= Faker::Company.logo %>" alt="">		
+					</div>
+				<% end %>	
+			</div>
+			
+		</div>
 	</section>	
 </div>
