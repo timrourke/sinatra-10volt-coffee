@@ -1,7 +1,7 @@
 {
-  "name": "sinatra-10volt-coffee",
+  "name": "sinatra-10volt-engineering",
   "version": "0.0.1",
-  "description": "10Volt Coffee - Sinatra",
+  "description": "10Volt Engineering - Sinatra",
   "main": "app.rb",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

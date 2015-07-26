@@ -1,7 +1,7 @@
 $about-main-background-top-overlay:rgba(0,0,70,0.3);
 $about-main-background-bottom-overlay:rgba(161,66,0,0.6);
 
-.about main {
+.contact main {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,55 +29,60 @@ $about-main-background-bottom-overlay:rgba(161,66,0,0.6);
   }
 }
 
-.about .hero {
+.contact .hero {
   position:relative;
   margin-top:6em;
 }
 
-.about .column__wrapper {
+.contact .column__wrapper {
   max-width:38em;
   background-color:rgba(255,255,255,0.8);
   padding-top:2em;
   padding-bottom:2em;
 }
 
-.about {
-  figure {
-    background-color:rgba(255,255,255,0.5);
-    padding:1em;
-  }
-  figcaption {
-    font-weight:400;
-    text-align:center;
-  }
-  .grafici-graph__svg {
-    background:linear-gradient(to bottom, rgba(0,0,30,0.125), rgba(0,0,80,0.25));
-  }
-  .grafici-graph__svg .grafici-data-label {
-    transition:all 0.3s ease-in-out;
-    opacity:0;
-  }
-  .grafici-graph__svg circle {
-    transition:all 0.3s ease-in-out;
-  }
-  .grafici-graph__svg circle:hover {
-    stroke-width:1;
-    stroke:rgb(20,180,250);
-  }
-  .grafici-graph__svg circle:hover,
-  .grafici-graph__svg .grafici-data-label:hover {
-    cursor: pointer;
-  }
-  .grafici-graph__svg line:hover + text,
-  .grafici-graph__svg circle:hover + text,
-  .grafici-graph__svg .grafici-data-label:hover {
-    opacity:1;
-  }
-  .grafici-x-label {
-    opacity:1;
+.contact .col-1-2 {
+  @media all and (max-width:800px) {
+    float:none;
+    width:100%;
+    margin:0 0 1em 0;
   }
 }
 
-.about .clients {
-  margin-top:2em;
+.directory__record {
+  margin-bottom:1em;
+}
+
+.directory__name,
+.directory__title,
+.directory__email,
+.directory__phone {
+  display:block;
+  font-size:0.7em;
+}
+
+.directory__name {
+  font-weight:400;
+}
+
+.directory__title {
+  font-style:italic;
+  color:#666;
+}
+
+.directory__email a {
+  color:lighten($red, 10%);
+}
+
+.directory__avatar {
+  overflow:hidden;
+  border-radius:50%;
+  background-color:white;
+  img {
+    display:block;
+  }
+}
+
+.directory-contact__info {
+  padding-left:1em;
 }

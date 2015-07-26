@@ -87,3 +87,7 @@ end
 get '/portfolio' do 
 	erb :portfolio, :locals => {:active => 'portfolio', :portfolio_posts => portfolio_posts}
 end
+
+get '/contact' do 
+	erb :contact, :locals => {:active => 'contact'}
+end

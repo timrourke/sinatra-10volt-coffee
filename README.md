@@ -1,3 +1,3 @@
-# Belkowitz Demolition
+# 10Volt Engineering
 
-A fake Sinatra site for an imaginary demolition company built with ERB templating.
+A fake Sinatra site for an imaginary engineering company built with ERB templating.

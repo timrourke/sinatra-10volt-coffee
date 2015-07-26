@@ -28,6 +28,11 @@ $home-main-background-bottom-overlay:rgba(161,66,0,0.6);
   }
 }
 
+.blog .hero {
+  position:relative;
+  margin-top:6em;
+}
+
 .post {
 	@extend .clearfix;
 	background-color:rgba(255,255,255,0.9);

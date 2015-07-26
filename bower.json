@@ -1,10 +1,10 @@
 {
-  "name": "sinatra-10volt-coffee",
+  "name": "sinatra-10volt-engineering",
   "version": "0.0.0",
   "authors": [
     "Tim Rourke <tim@timrourke.com>"
   ],
-  "description": "10Volt Coffee - Sinatra",
+  "description": "10Volt Engineering - Sinatra",
   "main": "app.rb",
   "license": "MIT",
   "ignore": [
