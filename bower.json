@@ -1,0 +1,21 @@
+{
+  "name": "sinatra-10volt-coffee",
+  "version": "0.0.0",
+  "authors": [
+    "Tim Rourke <tim@timrourke.com>"
+  ],
+  "description": "10Volt Coffee - Sinatra",
+  "main": "app.rb",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4"
+  }
+}

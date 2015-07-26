@@ -1,0 +1,79 @@
+$about-main-background-top-overlay:rgba(0,0,70,0.3);
+$about-main-background-bottom-overlay:rgba(161,66,0,0.6);
+
+.about main {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-480.jpg');
+  @media all and (min-width: 320px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-640.jpg');
+  }
+  @media all and (min-width: 480px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-800.jpg');
+  }
+  @media all and (min-width: 640px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-1024.jpg');
+  }
+  @media all and (min-width: 800px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-1280.jpg');
+  }
+  @media all and (min-width: 1024px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-1600.jpg');
+  }
+  @media all and (min-width: 1280px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-1890.jpg');
+  }
+  @media all and (min-width: 1600px) {
+    background-image:linear-gradient(to bottom, $about-main-background-top-overlay, $about-main-background-bottom-overlay), url('/images/city-2400.jpg');
+  }
+}
+
+.about .hero {
+  position:relative;
+  margin-top:6em;
+}
+
+.about .column__wrapper {
+  max-width:38em;
+  background-color:rgba(255,255,255,0.8);
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.about {
+  figure {
+    background-color:rgba(255,255,255,0.5);
+    padding:1em;
+  }
+  figcaption {
+    font-weight:400;
+    text-align:center;
+  }
+  .grafici-graph__svg {
+    background:linear-gradient(to bottom, rgba(0,0,30,0.125), rgba(0,0,80,0.25));
+  }
+  .grafici-graph__svg .grafici-data-label {
+    transition:all 0.3s ease-in-out;
+    opacity:0;
+  }
+  .grafici-graph__svg circle {
+    transition:all 0.3s ease-in-out;
+  }
+  .grafici-graph__svg circle:hover {
+    stroke-width:1;
+    stroke:rgb(20,180,250);
+  }
+  .grafici-graph__svg circle:hover,
+  .grafici-graph__svg .grafici-data-label:hover {
+    cursor: pointer;
+  }
+  .grafici-graph__svg line:hover + text,
+  .grafici-graph__svg circle:hover + text,
+  .grafici-graph__svg .grafici-data-label:hover {
+    opacity:1;
+  }
+  .grafici-x-label {
+    opacity:1;
+  }
+}

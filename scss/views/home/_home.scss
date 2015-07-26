@@ -1,0 +1,47 @@
+$home-main-background-top-overlay:rgba(10,0,40,0.5);
+$home-main-background-bottom-overlay:rgba(8,30,40,0.3);
+
+.home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-480.jpg');
+  @media all and (min-width: 320px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-640.jpg');
+  }
+  @media all and (min-width: 480px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-800.jpg');
+  }
+  @media all and (min-width: 640px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-1024.jpg');
+  }
+  @media all and (min-width: 800px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-1280.jpg');
+  }
+  @media all and (min-width: 1024px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-1600.jpg');
+  }
+  @media all and (min-width: 1280px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-1890.jpg');
+  }
+  @media all and (min-width: 1600px) {
+    background-image:linear-gradient(to bottom, $home-main-background-top-overlay, $home-main-background-bottom-overlay), url('/images/newyork-2400.jpg');
+  }
+}
+
+.hero {
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	padding-left:1em;
+	padding-right:1em;
+	text-align:center;
+	transform:translateY(-50%) translateX(-50%);
+}
+
+.hero__text {
+	color:white;
+	font-size:4em;
+	margin-bottom:0;
+}

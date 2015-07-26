@@ -1,0 +1,52 @@
+<div class="column__wrapper">
+	<% portfolio_posts.each do |post| %>
+	<article class="post col-group">
+		<div class="col-1-3">
+			<div class="portfolio__image portfolio__image-<%= post['image_url'] %>">
+				<style type="text/css">
+					.portfolio__image-<%= post['image_url'] %> {
+					  background-size: cover;
+					  background-repeat: no-repeat;
+					  background-image:url("/images/<%= post['image_url'] %>-480.jpg");
+					  @media all and (min-width: 320px) {
+					    background-image:url("/images/<%= post['image_url'] %>-640.jpg");
+					  }
+					  @media all and (min-width: 480px) {
+					    background-image:url("/images/<%= post['image_url'] %>-800.jpg");
+					  }
+					  @media all and (min-width: 640px) {
+					    background-image:url("/images/<%= post['image_url'] %>-1024.jpg");
+					  }
+					  @media all and (min-width: 800px) {
+					    background-image:url("/images/<%= post['image_url'] %>-1280.jpg");
+					  }
+					  @media all and (min-width: 1024px) {
+					    background-image:url("/images/<%= post['image_url'] %>-1600.jpg");
+					  }
+					  @media all and (min-width: 1280px) {
+					    background-image:url("/images/<%= post['image_url'] %>-1890.jpg");
+					  }
+					  @media all and (min-width: 1600px) {
+					    background-image:url("/images/<%= post['image_url'] %>-2400.jpg");
+					  }
+					}
+				</style>
+			</div>
+		</div>
+		<div class="col-2-3 col-last">
+			<header class="post__header">
+				<h2 class="post__title"><%= post['title'] %></h2>
+				<p class="post__meta">
+					<span class="post__location"><%= post['location'] %></span>
+					<span class="post__involvement"><%= post['involvement'] %></span>
+				</p>	
+			</header>
+			<div class="post-content">
+				<p><%= post['excerpt'] %></p>
+			</div>
+			<a class="read-more" href="#0">Read more. →</a>	
+		</div>
+	</article>
+	<% end %>	
+</div>
+

@@ -1,0 +1,21 @@
+.site-header {
+  @extend .clearfix;
+  position:relative;
+  height:9em;
+  background:transparent;
+  padding:1em 2em 0 2em;
+  width:100%;
+  z-index:100;
+}
+
+.site-branding {
+  @extend .typl8-alpha;
+  float:left;
+  width:3em;
+}
+
+.site-title {
+  @extend .typl8-alpha;
+  margin-bottom:0.25em;
+  z-index:100;
+}

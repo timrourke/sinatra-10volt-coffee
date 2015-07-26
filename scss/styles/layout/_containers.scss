@@ -1,0 +1,45 @@
+html {
+  transition:all 0.5s ease-in-out;
+}
+
+//Clean sticky footer
+html, body {
+  height:100%;
+  color: $typl8-copy-color;
+}
+
+main {
+  //min-height:100%;
+  margin:0;
+  padding:0;
+  width:100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+main {
+  width:100%;
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 0 -4em 0;
+}
+
+.footer-wrapper {
+  height:4em;
+  padding:0 2em;
+}
+
+section {
+  width: 100%;
+  max-width:50em;
+  margin:0 auto 4em auto;
+  padding:0 2em;
+}
+
+.column__wrapper {
+  margin:0 auto 4em auto;
+  width:100%;
+  max-width:50em;
+  padding:0 1em;
+}

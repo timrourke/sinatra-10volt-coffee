@@ -1,0 +1,35 @@
+%hover-fill-orange {
+  &:hover {
+    fill:saturate(lighten($orange, 10%), 80%);
+  }
+}
+
+%hover-color-orange {
+  &:hover {
+    color:saturate(lighten($orange, 10%), 80%);
+  }
+}
+
+%hover-fill-yellow {
+  &:hover {
+    fill:saturate(lighten($yellow, 25%), 80%);
+  }
+}
+
+%hover-color-yellow {
+  &:hover {
+    color:saturate(lighten($yellow, 25%), 80%);
+  }
+}
+
+%hover-fill-red {
+  &:hover {
+    fill:lighten($red, 10%);
+  }
+}
+
+%hover-color-red {
+  &:hover {
+    color:lighten($red, 10%);
+  }
+}

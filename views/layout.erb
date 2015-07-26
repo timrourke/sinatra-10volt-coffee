@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>10VOLT ENGINEERING</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/style/style.css">
+<body class="<%= active %>">
+	<div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <%=  erb :'partials/svg' %>
+  </div>
+
+	<main class="site-main">
+    <div class="wrapper">    
+      <header class="site-header">
+        <div class="site-branding">
+          <a href="/" rel="bookmark">
+            <h1 class="site-title">
+              <span class="hidden">10VOLT ENGINEERING</span>
+            </h1>
+            <svg viewBox="0 0 400 190">
+              <use xlink:href="#10volt-red-hot" />
+            </svg>  
+          </a>
+        </div>
+
+        <%= erb :'partials/navigation', :locals => {:active => active } %>
+      </header>
+
+  		<%= yield %>
+    </div>
+	</main>
+
+  <div class="footer-wrapper">
+    <footer class="site-footer">
+      <div class="contact">
+        <ul>
+          <li><a href="mailto:tim@timrourke.com" rel="email"><svg class="icon"><use xlink:href="#email" /></svg></a></li>
+          <li><a href="https://github.com/timrourke" rel="external"><svg class="icon"><use xlink:href="#github" /></svg></a></li>
+          <li class="personal-site-link"><a href="http://timrourke.com" rel="external">timrourke.com</a></li>
+        </ul>
+      </div>
+    </footer> 
+  </div>
+
+  <script type="text/javascript" src="/scripts/global.min.js"></script>
+
+</body>
+</html>
